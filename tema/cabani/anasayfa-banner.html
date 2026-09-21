@@ -27,9 +27,94 @@
 	</div>
 	</li>
 </ul>
+<div class="yg-banner-countdown" id="ygBannerCountdown">
+	<span class="yg-countdown-label">KAMPANYA BİTİYOR</span>
+	<div class="yg-countdown-timer">
+		<div class="yg-countdown-box"><span class="yg-countdown-num" data-unit="gun">00</span><span class="yg-countdown-unit">GÜN</span></div>
+		<div class="yg-countdown-box"><span class="yg-countdown-num" data-unit="saat">00</span><span class="yg-countdown-unit">SAAT</span></div>
+		<div class="yg-countdown-box"><span class="yg-countdown-num" data-unit="dakika">00</span><span class="yg-countdown-unit">DK</span></div>
+		<div class="yg-countdown-box"><span class="yg-countdown-num" data-unit="saniye">00</span><span class="yg-countdown-unit">SN</span></div>
+	</div>
+</div>
 </div>
 <style type="text/css">.yg-banner-by-link-container {
     position: relative !important;
+}
+
+.yg-banner-countdown {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1000000;
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    pointer-events: none;
+}
+
+.yg-countdown-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    white-space: nowrap;
+}
+
+.yg-countdown-timer {
+    display: flex;
+    gap: 8px;
+}
+
+.yg-countdown-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 30px;
+}
+
+.yg-countdown-num {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.yg-countdown-unit {
+    font-size: 9px;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.yg-banner-countdown.yg-countdown-ended .yg-countdown-timer {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .yg-banner-countdown {
+        top: 8px;
+        right: 8px;
+        padding: 6px 8px;
+        border-radius: 8px;
+    }
+    .yg-countdown-label {
+        font-size: 9px;
+        margin-bottom: 4px;
+    }
+    .yg-countdown-timer {
+        gap: 4px;
+    }
+    .yg-countdown-box {
+        min-width: 22px;
+    }
+    .yg-countdown-num {
+        font-size: 13px;
+    }
+    .yg-countdown-unit {
+        font-size: 7px;
+    }
 }
 
 .yg-custom-prev,
@@ -89,4 +174,39 @@ $(document).ready(function () {
     });
 
 });
+
+// Kampanya bitiş sayacı - kampanya değiştiğinde SADECE bu satırı güncelleyin (YYYY-AA-GGTSS:DD:SS)
+var cabaniCountdownHedefTarih = "2026-09-30T23:59:59";
+
+(function () {
+    var kutu = document.getElementById("ygBannerCountdown");
+    if (!kutu) return;
+
+    var hedef = new Date(cabaniCountdownHedefTarih).getTime();
+    var zamanlayici;
+
+    function guncelle() {
+        var fark = hedef - new Date().getTime();
+
+        if (fark <= 0) {
+            kutu.classList.add("yg-countdown-ended");
+            kutu.querySelector(".yg-countdown-label").textContent = "KAMPANYA SONA ERDİ";
+            clearInterval(zamanlayici);
+            return;
+        }
+
+        var gun = Math.floor(fark / (1000 * 60 * 60 * 24));
+        var saat = Math.floor((fark % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var dakika = Math.floor((fark % (1000 * 60 * 60)) / (1000 * 60));
+        var saniye = Math.floor((fark % (1000 * 60)) / 1000);
+
+        kutu.querySelector('[data-unit="gun"]').textContent = String(gun).padStart(2, "0");
+        kutu.querySelector('[data-unit="saat"]').textContent = String(saat).padStart(2, "0");
+        kutu.querySelector('[data-unit="dakika"]').textContent = String(dakika).padStart(2, "0");
+        kutu.querySelector('[data-unit="saniye"]').textContent = String(saniye).padStart(2, "0");
+    }
+
+    guncelle();
+    zamanlayici = setInterval(guncelle, 1000);
+})();
 </script>
