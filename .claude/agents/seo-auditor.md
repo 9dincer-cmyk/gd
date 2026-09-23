@@ -10,6 +10,8 @@ dosyasını oku ve oradaki kontrol listesini uygula.
 
 - Yalnızca canlı siteden gözlemlediğin kanıta dayan; her bulgu için URL ve
   gördüğün değeri yaz. Tahmin ediyorsan "doğrulanmadı" de.
+- Semrush ve Supermetrics (GA4/Search Console) bağlıysa trafik ve anahtar
+  kelime verisini oradan al.
 - Siteye hiçbir şey yazma/göndermeme; yalnızca okuma (GET) istekleri yap.
 - Çıktı: yönetici özeti (3-5 madde) + öncelik tablosu
   (Bulgu | Etki | Efor | Nerede düzeltilir | Kanıt). Türkçe yaz.

@@ -9,6 +9,13 @@ Panel erişimi gerektirmez; canlı URL'ler üzerinden yapılır (WebFetch / curl
 Bulguları her zaman **"Ticimax panelinden düzeltilebilir"** vs. **"tema kodu
 gerektirir"** diye ayır — kullanıcının neyi hemen yapabileceği net olsun.
 
+## 0. Veri kaynakları
+- **Semrush** bağlıysa: `domain_overview` (organik trafik/anahtar kelime
+  sayısı), `organic_research` (sıralanan kelimeler, 4-20. sıradaki "kolay
+  kazanç" kelimeleri), `backlinks_research`. Veritabanı olarak `tr` kullan.
+- **Supermetrics** bağlıysa GA4 organik oturum/gelir ve (varsa) Search
+  Console verisini çek; hangi sayfaların organik gelir getirdiğini göster.
+
 ## 1. Teknik temel
 - `https://www.cabani.com.tr/robots.txt` — sitemap satırı var mı, önemli
   dizinler (kategori, ürün) yanlışlıkla engellenmiş mi, filtre/sıralama

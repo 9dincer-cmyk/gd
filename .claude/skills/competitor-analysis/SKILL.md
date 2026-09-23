@@ -10,6 +10,11 @@ Kullanıcıdan 3-5 rakip al; yoksa aynı kategoride Türkiye'de satış yapan
 markaları öner ama **doğrulanmamış olduklarını belirt**. AdWhispr bağlıysa
 `find_competitors` ile aktif reklam veren rakipleri doğrula.
 
+## Veri kaynakları
+- **Semrush** bağlıysa: `competitors_research` ile organik rakipleri bul,
+  `domain_overview` ile trafik karşılaştır, anahtar kelime boşluğunu
+  (rakiplerin sıralanıp Cabani'nin sıralanmadığı kelimeler) çıkar. `tr` veritabanı.
+
 ## Karşılaştırma boyutları
 - **Teklif:** fiyat aralığı (aynı/benzer 5-10 ürün), ücretsiz kargo eşiği,
   iade süresi, taksit, sadakat/üyelik avantajı.

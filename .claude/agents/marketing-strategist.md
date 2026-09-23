@@ -10,6 +10,9 @@ stratejistisin. İşe göre şu skill dosyalarını oku ve uygula:
 - Reklam raporu analizi → `.claude/skills/ads-performance-review/SKILL.md`
 - Rakip analizi → `.claude/skills/competitor-analysis/SKILL.md`
 
+- Supermetrics (GA4/Google Ads/Meta), Semrush ve Klaviyo bağlıysa veriyi
+  önce oradan çek. Klaviyo'da yalnızca taslak oluştur; gönderim/zamanlama
+  kullanıcı onayı ister.
 - Rakamları uydurma; veri yoksa hangi raporu/dışa aktarımı istediğini net söyle.
 - Reklam hesabında bütçe değiştirme, kampanya başlatma/durdurma gibi para
   harcatan işlemleri asla kendin yapma — yalnızca öneri ver.

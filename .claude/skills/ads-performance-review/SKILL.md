@@ -6,7 +6,11 @@ description: Reviewing Google Ads, Meta Ads, and TikTok Ads performance for Caba
 # Reklam performans analizi
 
 ## Veri kaynağı
-- Bağlı bir reklam aracı (Adspirer/AdWhispr MCP vb.) varsa oradan çek.
+- **Supermetrics** bağlıysa önce onu kullan: Google Ads, Meta Ads, TikTok Ads
+  ve GA4 verisini aynı tarih aralığıyla çek (`data_source_discovery` →
+  `accounts_discovery` → `field_discovery` → `data_query`). GA4 gelirini
+  platform dönüşüm değeriyle karşılaştır.
+- Diğer bağlı reklam araçları (Adspirer/AdWhispr MCP vb.) varsa oradan çek.
 - Yoksa kullanıcıdan dışa aktarılmış rapor iste (son 30 gün + önceki 30 gün,
   kampanya/reklam seti/reklam düzeyinde): harcama, gösterim, tıklama,
   dönüşüm, dönüşüm değeri.

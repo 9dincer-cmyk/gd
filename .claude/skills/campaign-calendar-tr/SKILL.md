@@ -31,6 +31,13 @@ description: Planning marketing campaigns around the Turkish retail calendar (Ka
    kontrolü, kargo kapasitesi, sayfa hızı — Ticimax panelinde yapılacaklar listesi.
 6. **Ölçüm:** UTM şeması (`utm_source/medium/campaign=<donem>-<yil>`), GA4 olay kontrolü.
 
+## E-posta/SMS (Klaviyo)
+**Klaviyo** bağlıysa: geçmiş kampanyaların açılma/tıklama/gelir
+(`get_campaigns`, `get_metrics`) verisine bakarak gönderim saatini ve
+segmenti seç; kampanya taslağını Klaviyo'da **taslak olarak** oluştur,
+göndermeyi/zamanlamayı yalnızca kullanıcı onayıyla yap. Önerilen akışlar:
+hoş geldin, sepet terk, göz atma terk, satın alma sonrası, geri kazanma.
+
 ## Yasal
 İndirim duyurularında önceki fiyat = son 30 günün en düşük fiyatı kuralı;
 ticari elektronik ileti (e-posta/SMS) yalnızca İYS'de onaylı alıcılara.
