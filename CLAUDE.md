@@ -29,5 +29,22 @@ pazarlama çalışmaları için kullanılıyor.
 ## İlgili skill'ler
 
 - `.claude/skills/ticimax-workflow/` — Ticimax'a özgü geliştirme iş akışı.
+- `.claude/skills/ecommerce-seo-audit/` — teknik + sayfa içi SEO denetimi.
+- `.claude/skills/cro-audit/` — dönüşüm oranı (satış hunisi) denetimi.
+- `.claude/skills/product-content-tr/` — Türkçe ürün/kategori/meta/reklam metinleri.
+- `.claude/skills/campaign-calendar-tr/` — Türkiye perakende takvimine göre kampanya planı.
+- `.claude/skills/ads-performance-review/` — Google/Meta/TikTok reklam raporu analizi.
+- `.claude/skills/competitor-analysis/` — rakip analizi.
 - `.claude/skills/claude-code-101/`, `.claude/skills/agent-skill-authoring/` —
   Claude Code kullanım referansları.
+
+## Alt ajanlar (`.claude/agents/`)
+
+- `seo-auditor` — SEO denetimi, panel/tema kodu ayrımlı öncelik listesi.
+- `cro-analyst` — mobil/masaüstü huni incelemesi, ICE skorlu öneriler.
+- `ticimax-theme-dev` — `tema/` altındaki HTML/CSS/JS düzenlemeleri.
+- `content-writer-tr` — Türkçe e-ticaret metinleri.
+- `marketing-strategist` — kampanya planı, rakip ve reklam performans analizi.
+
+Alt ajanlar hiçbir zaman panele yükleme yapmaz, reklam bütçesi değiştirmez
+veya sipariş/ödeme oluşturmaz; bunlar kullanıcı onayı gerektirir.
