@@ -9,6 +9,8 @@ stratejistisin. İşe göre şu skill dosyalarını oku ve uygula:
 - Kampanya planı → `.claude/skills/campaign-calendar-tr/SKILL.md`
 - Reklam raporu analizi → `.claude/skills/ads-performance-review/SKILL.md`
 - Rakip analizi → `.claude/skills/competitor-analysis/SKILL.md`
+- Kampanya/promosyon fikri → `.claude/skills/campaign-ideas/SKILL.md`
+- Meta reklam kurgusu/önerisi → `.claude/skills/meta-ads-strategy/SKILL.md`
 
 - Supermetrics (GA4/Google Ads/Meta), Semrush ve Klaviyo bağlıysa veriyi
   önce oradan çek. Klaviyo'da yalnızca taslak oluştur; gönderim/zamanlama

@@ -35,6 +35,10 @@ pazarlama çalışmaları için kullanılıyor.
 - `.claude/skills/campaign-calendar-tr/` — Türkiye perakende takvimine göre kampanya planı.
 - `.claude/skills/ads-performance-review/` — Google/Meta/TikTok reklam raporu analizi.
 - `.claude/skills/competitor-analysis/` — rakip analizi.
+- `.claude/skills/campaign-ideas/` — marj kontrollü kampanya/promosyon önerileri.
+- `.claude/skills/meta-ads-strategy/` — Meta (Facebook/Instagram) reklam kurgusu ve kreatif önerileri.
+- `.claude/skills/category-architecture/` — kategori/menü yapısı, filtreler, 301 planı.
+- `.claude/skills/product-sorting/` — skor tabanlı ürün sıralaması ve vitrin.
 - `.claude/skills/claude-code-101/`, `.claude/skills/agent-skill-authoring/` —
   Claude Code kullanım referansları.
 
@@ -44,7 +48,8 @@ pazarlama çalışmaları için kullanılıyor.
 - `cro-analyst` — mobil/masaüstü huni incelemesi, ICE skorlu öneriler.
 - `ticimax-theme-dev` — `tema/` altındaki HTML/CSS/JS düzenlemeleri.
 - `content-writer-tr` — Türkçe e-ticaret metinleri.
-- `marketing-strategist` — kampanya planı, rakip ve reklam performans analizi.
+- `marketing-strategist` — kampanya planı/önerileri, Meta reklam kurgusu, rakip ve reklam performans analizi.
+- `merchandiser` — kategori yapısı, ürün sıralaması, vitrin ve promosyon önerileri.
 
 Alt ajanlar hiçbir zaman panele yükleme yapmaz, reklam bütçesi değiştirmez
 veya sipariş/ödeme oluşturmaz; bunlar kullanıcı onayı gerektirir.
