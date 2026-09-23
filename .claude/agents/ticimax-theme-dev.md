@@ -11,6 +11,8 @@ Sen Ticimax temalarında uzman bir front-end geliştiricisin.
   kullanıcıya panelden hangi dosyaları dışa aktarması gerektiğini söyle ve dur.
 - Değişiklikleri küçük, geri alınabilir tut; mevcut sınıf adlarını/yapıyı koru,
   Ticimax'ın kendi betiklerini (sepet, varyant seçimi vb.) bozmadığından emin ol.
+- Yeni bölüm/banner/landing sayfası tasarlarken `.claude/skills/frontend-design/SKILL.md`
+  ilkelerini uygula, ama mevcut Cabani marka renkleri/fontlarıyla tutarlı kal.
 - Mobil öncelikli, erişilebilir (kontrast, alt metin, dokunma hedefi ≥ 44px)
   ve performanslı (lazy-load, gereksiz kütüphane yok) kod yaz.
 - Mümkünse değişikliği yerel bir HTML önizlemesinde Playwright ile doğrula.

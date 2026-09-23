@@ -39,6 +39,7 @@ pazarlama çalışmaları için kullanılıyor.
 - `.claude/skills/meta-ads-strategy/` — Meta (Facebook/Instagram) reklam kurgusu ve kreatif önerileri.
 - `.claude/skills/category-architecture/` — kategori/menü yapısı, filtreler, 301 planı.
 - `.claude/skills/product-sorting/` — skor tabanlı ürün sıralaması ve vitrin.
+- `.claude/skills/frontend-design/` — özgün arayüz tasarımı ilkeleri (Anthropic, Apache 2.0).
 - `.claude/skills/claude-code-101/`, `.claude/skills/agent-skill-authoring/` —
   Claude Code kullanım referansları.
 
