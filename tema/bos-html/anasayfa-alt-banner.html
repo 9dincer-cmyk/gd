@@ -1,0 +1,40 @@
+<!--
+  Cabani — Ana sayfa alt banner (Ticimax "Boş HTML" bileşeni)
+  1) Sonbahar Seçkisi Net %50 İndirim   → /sonbahar-seckisi
+  2) Yeni Sezon'a İlk Adım              → /yeni-sezon
+  Yüklemeden önce: görsel yollarını (src/srcset) ve kategori linklerini panelde
+  oluşturduğunuz gerçek adreslerle değiştirin.
+-->
+<style>
+  .cb-alt-banner{max-width:1690px;margin:24px auto;padding:0 16px;display:grid;gap:16px}
+  .cb-alt-banner a{display:block;border-radius:4px;overflow:hidden}
+  .cb-alt-banner img{display:block;width:100%;height:auto}
+  .cb-alt-banner a:focus-visible{outline:2px solid #8a5a00;outline-offset:3px}
+  .cb-alt-banner__not{margin:0;text-align:center;font-size:13px;color:#555}
+  .cb-alt-banner__not a{display:inline;color:inherit;text-decoration:underline}
+  @media (max-width:767px){.cb-alt-banner{gap:12px;margin:16px auto}}
+</style>
+
+<section class="cb-alt-banner" aria-label="Kampanyalar">
+
+  <a href="/sonbahar-seckisi" title="Özel Sonbahar Seçkisi — Net %50 İndirim">
+    <picture>
+      <source media="(max-width:767px)" srcset="/Uploads/Banner/sonbahar-50-mobil.jpg" width="750" height="900">
+      <img src="/Uploads/Banner/sonbahar-50-masaustu.jpg" width="1687" height="471" loading="lazy" decoding="async"
+           alt="Özel Sonbahar Seçkisi: seçili ürünlerde net %50 indirim — Alışverişe başla">
+    </picture>
+  </a>
+
+  <a href="/yeni-sezon" title="Yeni Sezon'a İlk Adım">
+    <picture>
+      <source media="(max-width:767px)" srcset="/Uploads/Banner/yeni-sezon-mobil.jpg" width="750" height="900">
+      <img src="/Uploads/Banner/yeni-sezon-masaustu.jpg" width="1687" height="471" loading="lazy" decoding="async"
+           alt="Yeni Sezon'a İlk Adım: yeni sezon ayakkabılar — ücretsiz kargo, peşin fiyatına 3 taksit, kolay iade">
+    </picture>
+  </a>
+
+  <p class="cb-alt-banner__not">
+    Kampanya koşulları için <a href="/kampanyalar-duyurular">Kampanyalar &amp; Duyurular</a> sayfasını inceleyin.
+  </p>
+
+</section>
