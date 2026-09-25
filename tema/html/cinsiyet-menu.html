@@ -1,23 +1,29 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 <style type="text/css">
 /* Şık Menü Stilleri */
 .gender-tabs-wrapper { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
 .gender-tabs-wrapper::-webkit-scrollbar { display: none; }
-.gender-tabs { display: flex; gap: 20px; justify-content: flex-start; align-items: center; flex-wrap: nowrap !important; font-family: "Helvetica Neue", Helvetica, Arial, "Optima", sans-serif; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; white-space: nowrap; padding-left: 2px; }
-.gender-tabs .tab { color: #a0a0a0; cursor: pointer; font-weight: 400; position: relative; transition: all 0.4s ease; padding-bottom: 4px; flex-shrink: 0; }
-.gender-tabs .tab a { color: inherit; text-decoration: none; }
-.gender-tabs .tab:hover { color: #d8d8d8; }
+.gender-tabs { display: flex; gap: 28px; justify-content: flex-start; align-items: center; flex-wrap: nowrap !important; font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; white-space: nowrap; padding-left: 2px; }
+.gender-tabs .tab { color: #c8c8c8; cursor: pointer; font-weight: 700; position: relative; transition: color 0.3s ease; padding: 6px 0; flex-shrink: 0; }
+.gender-tabs .tab a { color: inherit; text-decoration: none; display: block; }
+.gender-tabs .tab::after { content: ""; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background-color: #ffffff; transition: width 0.3s ease, left 0.3s ease; }
+.gender-tabs .tab:hover { color: #ffffff; }
+.gender-tabs .tab:hover::after { left: 0; width: 100%; opacity: 0.5; }
 
 /* Aktif class (JS ekleyecek) */
-.gender-tabs .tab.is-active { color: #ffffff; font-weight: 600; }
-.gender-tabs .tab.is-active::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #ffffff; opacity: 0.8; }
+.gender-tabs .tab.is-active { color: #ffffff; font-weight: 800; }
+.gender-tabs .tab.is-active::after { left: 0; width: 100%; opacity: 1; }
 
 /* Mobil Stilleri */
 @media (max-width: 600px) {
   .gender-tabs {
-    gap: 8px;
-    font-size: 10px;
-    letter-spacing: 0.5px;
+    gap: 18px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
   }
+  .gender-tabs .tab { padding: 8px 0; }
 }
 </style>
 <div class="html custom html_2">
