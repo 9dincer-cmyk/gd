@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Mobil ana sayfa banner aralıkları ("nefes alan" düzen, Boyner benzeri)
+   --------------------------------------------------------------------------
+   Yalnızca mobilde (≤ 767px) çalışır; masaüstü düzenine dokunmaz.
+
+   KURULUM: Aşağıdaki iki seçiciyi sitedeki gerçek sınıf adlarıyla değiştirin:
+     .cb-banner-alani  → banner'ları saran kapsayıcı (tüm banner'ların ebeveyni)
+     .cb-banner        → tek bir banner kutusu (resmi ve linki içeren öğe)
+   Sınıf adını bulmak için: Chrome'da siteyi açın → bir banner'a sağ tık →
+   "İncele" → banner'ın ve kapsayıcısının class="..." değerine bakın.
+   ========================================================================== */
+
+:root {
+  --cb-banner-bosluk: 12px;   /* banner'lar arası dikey boşluk */
+  --cb-banner-kenar: 12px;    /* ekran kenarlarından iç boşluk */
+  --cb-banner-kose: 8px;      /* köşe yuvarlaklığı (0 = keskin köşe) */
+}
+
+@media (max-width: 767px) {
+  .cb-banner-alani {
+    display: flex;
+    flex-direction: column;
+    gap: var(--cb-banner-bosluk);
+    padding: var(--cb-banner-bosluk) var(--cb-banner-kenar);
+    box-sizing: border-box;
+  }
+
+  .cb-banner {
+    width: 100%;
+    margin: 0;                       /* temanın eski margin'lerini sıfırla; boşluğu gap verir */
+    border-radius: var(--cb-banner-kose);
+    overflow: hidden;                /* resmin köşeleri de yuvarlansın */
+  }
+
+  /* Resim altındaki birkaç piksellik satır boşluğunu kaldırır, oranı korur */
+  .cb-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
