@@ -24,7 +24,7 @@
   :root {
     --cb-banner-bosluk: 20px;
     --cb-banner-kenar: 24px;
-    --cb-banner-sutun: 1;     /* masaüstünde banner'lar yan yanaysa 2 veya 3 yapın */
+    --cb-banner-sutun: 1;     /* sitede banner'lar masaüstünde de alt alta */
   }
 }
 
