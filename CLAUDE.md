@@ -31,3 +31,17 @@ pazarlama çalışmaları için kullanılıyor.
 - `.claude/skills/ticimax-workflow/` — Ticimax'a özgü geliştirme iş akışı.
 - `.claude/skills/claude-code-101/`, `.claude/skills/agent-skill-authoring/` —
   Claude Code kullanım referansları.
+- `.claude/skills/find-skills/` — Açık skill ekosisteminden (`npx skills`,
+  https://skills.sh) yeni skill bulma/yükleme (kaynak: `vercel-labs/skills`).
+
+## Dışarıdan skill yükleme kuralı
+
+- `npx skills find` / `find-skills` ile bulunan bir skill **yalnızca kaynak
+  GitHub deposu en az 30.000 yıldıza sahipse** yüklenir. Yüklemeden önce
+  deponun yıldız sayısını doğrulayın; eşiğin altındakileri yüklemeyin, sadece
+  kullanıcıya bilgi olarak sunun (yıldız sayısıyla birlikte).
+- Skill'ler proje düzeyinde yüklenir (`-g` kullanmadan), böylece
+  `.claude/skills/` altına ve `skills-lock.json`'a yazılıp git'e commit edilir.
+  Bulut oturumları geçici olduğundan global (`-g`) kurulum kalıcı olmaz.
+- Yüklenen skill'in `SKILL.md` dosyasını commit etmeden önce okuyun; skill'ler
+  tam ajan yetkileriyle çalışır.
